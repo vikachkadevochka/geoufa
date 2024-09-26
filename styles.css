@@ -280,5 +280,17 @@ img {
         margin-top: 20px;
     }
 }
+@supports (-webkit-touch-callout: none) {
+    /* Стили только для Safari на iOS */
+    #3d-model-container {
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .img-comp-container {
+        height: 300px;
+        max-width: 100%;
+    }
+}
 
 }
