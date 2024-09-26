@@ -1,0 +1,213 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}* {
+            box-sizing: border-box;
+        }* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif; /* Легкий и игривый шрифт */
+    background-color: #fff8e1; /* Теплый бежевый фон */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px;
+    overflow-x: hidden;
+        }
+
+       /* Шапка сайта */
+header {
+    background: linear-gradient(135deg, #f57c00, #ffb74d); /* Теплый градиент из оранжевых оттенков */
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom-left-radius: 50px; /* Закругленный угол для мультяшного эффекта */
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffecb3;
+    font-weight: 400;
+}
+
+/* Навигационное меню */
+nav {
+    background-color: #ff9800; /* Теплый оранжевый */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    margin-right: 20px; /* Отступ справа от логотипа */
+}
+
+.logo img {
+    height: 150px; /* Высота логотипа (можно изменить) */
+}
+    /* Стили для футера */
+footer {
+    background-color: #ff9800; /* Оранжевый футер */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 18px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fdd835; /* Желтый оттенок */
+    transform: scale(1.1); /* Легкая анимация увеличения при наведении */
+}
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h1, h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #f57c00;
+    font-weight: 600;}
+    main p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: justify; /* Выравнивание текста по ширине */
+    padding: 0 15px; /* Отступы внутри текста */
+}
+
+
+        /* Flexbox для выравнивания модели и шлифовки по горизонтали */
+        .content-container {
+            display: flex;
+            justify-content: space-between; /* Расположение элементов справа и слева */
+            align-items: flex-start; /* Выравнивание по верхнему краю */
+            flex-wrap: wrap;
+            gap: 0px;
+        }
+
+        /* Контейнер для модели */
+        .model-container {
+            flex: 1;
+            max-width: 100%; /* Ограничиваем ширину для более сбалансированного вида */
+            text-align: center;
+        }
+
+        /* Контейнер для шлифа */
+        .polish-container {
+            flex: 1;
+            max-width: 100%; /* Ограничиваем ширину для более сбалансированного вида */
+            text-align: center;
+        }
+
+        /* Контейнер для слайдера изображений */
+        .img-comp-container {
+            position: relative;
+            max-width: 895px; /* Уменьшаем максимальную ширину */
+            height: 895px; /* Сохраняем пропорции, но уменьшаем высоту */
+              margin: 0px auto;
+        }
+
+        .img-comp-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .img-comp-img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Сохраняем пропорции и заполняем контейнер */
+        }
+
+        .img-comp-slider {
+            margin: 20px auto;
+            width: 800px;
+        }
+
+        /* Скрытая часть верхнего изображения */
+        #image-top {
+            clip-path: inset(0 0 0 50%);
+        }
+
+        /* Стиль для 3D модели */
+        #3d-model-container {
+            width: 100%;
+            height: 950px;
+        }
+
+/* Стили для футера */
+footer {
+    background-color: #ff9800; /* Оранжевый футер */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 18px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+}
