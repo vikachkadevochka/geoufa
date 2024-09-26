@@ -280,15 +280,15 @@ img {
         margin-top: 20px;
     }
 }
-@supports (-webkit-touch-callout: none) {
-    /* Стили только для Safari на iOS */
+@media not all and (min-resolution: 0.001dpcm) and (min--moz-device-pixel-ratio: 0) {
+    /* Стили для Safari на iOS */
     #3d-model-container {
-        height: 50vh;
-        overflow: hidden;
+        height: 50vh; /* Пример изменения высоты только для iOS */
+        overflow: hidden; /* Скрываем лишние элементы */
     }
 
     .img-comp-container {
-        height: 300px;
+        height: 300px; /* Пример изменения высоты только для iOS */
         max-width: 100%;
     }
 }
